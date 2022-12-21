@@ -16,7 +16,7 @@ const getLibro = (req,res)=>{
     connection.query(sql,params, (err, result)=>{
         if(err){
             console.log(err);
-            res.send(err)
+            res.send({error:err,parametros:params, sentancia:sql})
         } else{
             respuesta.error = false;
             respuesta.codigo = result.length==0? 204 : 201;
