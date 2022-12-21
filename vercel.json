@@ -2,9 +2,9 @@
     "version": 2,
     "name": "VERCEL-EXPRESS",
     "builds": [
-       { "src": "./src/apiRest.js", "use": "@vercel/node" }
+       { "src": "./apiRest.js", "use": "@vercel/node" }
     ],
     "routes": [
-       { "src": "/(.*)", "dest": "./src/apiRest.js" }
+       { "src": "/(.*)", "dest": "/" }
     ]
  }
